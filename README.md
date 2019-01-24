@@ -59,3 +59,9 @@ class Info extends Component {
 <img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103439@2x.png"/>
 </div>
 
+
+<div>
+<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103814@2x.png"/>
+<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-104547@2x.png"/>
+</div>
+
