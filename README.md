@@ -43,3 +43,19 @@ class Info extends Component {
     }
 
 ```
+
+
+#### 效果图
+
+<div>
+<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-102904@2x.png"/>
+<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-102956@2x.png"/>
+<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103726@2x.png"/>
+</div>
+
+<div>
+<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103830@2x.png"/>
+<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103655@2x.png"/>
+<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103439@2x.png"/>
+</div>
+
