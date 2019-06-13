@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -70,7 +70,7 @@ class CarouselDoc extends Component {
             <Col span={24} style={styles.codeBox}>
               <Carousel options={carouselMap} showDotsText autoPlay />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Carousel } = Components;
 const carouselMap = [{ tabName: 'first', content: (<div>23123</div>), isActive: true },
   { tabName: 'second', content: (<div>123</div>), isActive: false },
@@ -83,7 +83,7 @@ const carouselMap = [{ tabName: 'first', content: (<div>23123</div>), isActive: 
             <Col span={24} style={styles.codeBox}>
               <Carousel options={carouselMap} showDotsText={false} dragAble />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Carousel } = Components;
 const carouselMap = [{ tabName: 'first', content: (<div>23123</div>), isActive: true },
   { tabName: 'second', content: (<div>123</div>), isActive: false },

@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, utils} from '../../WAP';
+import {Components, utils} from '../../neo';
 import Core from "./utils/core.js"
 import Map from "./components/Map.js"
 import Maker from "./components/Maker.js"

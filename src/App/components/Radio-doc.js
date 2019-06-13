@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -84,7 +84,7 @@ class RadioDoc extends Component {
                 checkStyle={{"backgroundColor":"#999","color": '#fff'}} normalStyle={{"backgroundColor":"#f5f5f5","color": '#1a1a1a'}}
                 onChange={click} />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Radio } = Components;
 <Radio
   options={[{ value: 1, text: 'haha' }, { value: 2, text: 'haha2', checked: true }]}
@@ -104,7 +104,7 @@ const { Radio } = Components;
                 onChange={click}
               />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Checkbox } = Components;
 <Checkbox
   ref={(checkbox) => { dom.checkbox = checkbox; }}
@@ -140,7 +140,7 @@ const { Checkbox } = Components;
                     ref={(r) => { this.$$checkbox2 = r; }}
                   />
                 </Col>
-                <Code codes={`import { Components } from '../../WAP';
+                <Code codes={`import { Components } from '../../neo';
 const { Checkbox } = Components;
 <Checkbox
 options={[{ value: '1', text: '全选' }]}

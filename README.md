@@ -2,7 +2,6 @@
 
 一款基于react的UI框架，采用组件分级化思想，将组件分为低阶级组件，中阶组件，高阶组件。
 
-预览地址 http://www.wetalks.cn/neo-ui/
 
 ## 开发模式
 
@@ -44,24 +43,3 @@ class Info extends Component {
     }
 
 ```
-
-
-#### 效果图
-
-<div>
-<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-102904@2x.png"/>
-<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-102956@2x.png"/>
-<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103726@2x.png"/>
-</div>
-
-<div>
-<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103830@2x.png"/>
-<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103655@2x.png"/>
-<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103439@2x.png"/>
-</div>
-
-<div>
-<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-103814@2x.png"/>
-<img width='30%' src="http://plteva3wk.bkt.clouddn.com/WX20190103-104547@2x.png"/>
-</div>
-

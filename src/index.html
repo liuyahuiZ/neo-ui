@@ -54,6 +54,11 @@
       //     evt.preventDefault();  
       //   }  
       // });
+  
+      document.body.onclick = function(e){ 
+        console.log('get click');
+        console.log(e.target.nodeName);
+      }
     </script>
   </body>
   </html>

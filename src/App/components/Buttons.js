@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss';
@@ -52,10 +52,33 @@ class Bottons extends Component {
       super(props);
       this.state = {
           confirmDirty: false,
+          LoadSatus: 'NULLLOAD', //'LOADING', 'LOADED', 'NULLLOAD'
+          LoadSatusO: 'NULLLOAD',
       };
+    }
+    doLoad(){
+      this.setState({
+        LoadSatus: 'LOADING'
+      });
+      setTimeout(()=>{
+        this.setState({
+          LoadSatus: 'LOADED'
+        });
+      }, 3000)
+    }
+    doLoadO(){
+      this.setState({
+        LoadSatusO: 'LOADING'
+      });
+      setTimeout(()=>{
+        this.setState({
+          LoadSatusO: 'NULLLOAD'
+        });
+      }, 3000)
     }
 
     render() {
+      const {LoadSatus, LoadSatusO} = this.state;
       const icon = (<Icon iconName={'person'} iconColor={'color'} size={'120%'}/>);
         return(
           <section className="doc">
@@ -87,7 +110,7 @@ class Bottons extends Component {
               type={'link'}
             />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Buttons } = Components;
 const marginStyle = {
   margin: '10px'
@@ -306,6 +329,33 @@ size是按钮的大小，plain是按钮背景色为空`} />
                 size={'small'}
               />
             </Col>
+            <Col span={24}>
+              <h3>加载按钮</h3>
+            </Col>
+            <Col span={24} style={styles.codeBox}>
+              <Buttons
+                    text={'提交'}
+                    LoadSatus={LoadSatus}
+                    type={'primary'}
+                    size={'large'}
+                    style={{backgroundColor: '#007AFF', color:'#fff'}}
+                    onClick={()=>{
+                      this.doLoad()
+                    }}
+                />
+                <Buttons
+                    text={'提交'}
+                    LoadSatus={LoadSatusO}
+                    type={'primary'}
+                    size={'large'}
+                    style={{backgroundColor: '#007AFF', color:'#fff', marginTop: '1rem'}}
+                    onClick={()=>{
+                      this.doLoadO()
+                    }}
+                />
+              
+            </Col>
+            
             <Col span={24}>
                 <h3>不同颜色</h3>
                 <div>Button 组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸</div>

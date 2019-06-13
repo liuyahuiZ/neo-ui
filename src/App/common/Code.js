@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
 import PropTypes from 'prop-types';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import '../../Style/comment.scss';
 import Highlight from 'react-highlight';

@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -48,7 +48,7 @@ class ToasterDoc extends Component {
             <Col span={24}>
               <h3>基础用法</h3>
             </Col>
-            <Col span={28} style={styles.codeBox}>
+            <Col span={24} style={styles.codeBox}>
               <DashBoard score={value} showOutterScore />
               <Buttons
               text="primary"
@@ -57,7 +57,7 @@ class ToasterDoc extends Component {
               onClick={() => { this.randomValue() }} />
             </Col>
 
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Buttons, DashBoard } = Components;
 <DashBoard score={value} showOutterScore />
 <Buttons

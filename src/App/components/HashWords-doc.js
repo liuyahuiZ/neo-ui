@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -53,7 +53,7 @@ class ToasterDoc extends Component {
               <RandomNumber value={number} />
             </Col>
 
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Buttons, Toaster } = Components;
 <HashWords words={['鸡蛋','水果','鱼香肉丝','再来再来一瓶']} style={{height: '10rem', fontSize: '4rem'}}/>`} />
           </Row>

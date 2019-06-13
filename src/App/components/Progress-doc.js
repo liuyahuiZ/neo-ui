@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -48,7 +48,7 @@ class ProgressDoc extends Component {
               <Progress percent={57} barColor={'#76BFDC'} radius={10} />
               <Progress percent={99} barColor={'#FF6157'} radius={10} />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Progress } = Components;
 <Progress percent={30} barColor={'#F96C43'} radius={10} />
 <Progress percent={57} barColor={'#76BFDC'} radius={10} />
@@ -60,7 +60,7 @@ const { Progress } = Components;
               <Progress percent={40} barColor={'#79D46D'} radius={10} />
               <Progress percent={80} />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Progress } = Components;
 <Progress percent={40} barColor={'#79D46D'} radius={10} />
 <Progress percent={80} />`} />

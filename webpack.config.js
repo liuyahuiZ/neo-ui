@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebapckPlugin = require("extract-text-webpack-plugin");
 // const cssExtract = new ExtractTextWebapckPlugin('css/index.css');
 const sassExtract = new ExtractTextWebapckPlugin('css/cssbundle.css');
+const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -41,6 +42,9 @@ module.exports = {
             minChunks: 2
         }
       }
+    }),
+    new OpenBrowserPlugin({
+      url: 'http://localhost:8099'
     }),
     sassExtract
   ],

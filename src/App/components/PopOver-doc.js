@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -117,7 +117,7 @@ class LabelDoc extends Component {
                 <Col span={24} style={{ padding: '20px' }} />
               </Row>
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { PopOver, Buttons } = Components;
 <PopOver
 popContent={(<Switch checkedText={0} unCheckText={1} bgColor={'#FF6157'} checked />)}

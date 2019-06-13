@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, utils} from '../../WAP';
+import {Components, utils} from '../../neo';
 import { Map, Marker, Polygon } from 'react-amap';
 import Heatmap from 'react-amap-plugin-heatmap';
 import Geolocation from 'react-amap-plugin-geolocation';

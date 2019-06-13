@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -80,7 +80,7 @@ class TabDoc extends Component {
                 this.tabChange(v);
               }} />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Tab } = Components;
 const tabOptions = [{ tabName: 'first', content: 123, isActive: true },
   { tabName: 'second', content: (<div>23<Button text="确定" type={['primary']} style={marginStyle} /></div>), isActive: false },
@@ -94,7 +94,7 @@ const tabOptions = [{ tabName: 'first', content: 123, isActive: true },
                 this.tabChange(v);
               }} />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Tab } = Components;
 const tabOptions = [{ tabName: 'first', content: 123, isActive: true },
   { tabName: 'second', content: (<div>23<Button text="确定" type={['primary']} style={marginStyle} /></div>), isActive: false },

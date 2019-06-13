@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss';
@@ -148,7 +148,7 @@ class LabelDoc extends Component {
                 </Col>
               </Row>
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Menu } = Components;
 <Menu
   Date={gData}
@@ -170,7 +170,7 @@ const { Menu } = Components;
                 </Col>
               </Row>
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Menu } = Components;
 <Menu
   Date={gData}
@@ -204,7 +204,7 @@ const { Menu } = Components;
               </Row>
               
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Menu } = Components;
 <Menu
   Date={gData}
@@ -247,7 +247,7 @@ const { Menu } = Components;
               </Row>
               
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Menu } = Components;
 <Menu
   Date={gData}

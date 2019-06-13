@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -54,7 +54,7 @@ class ToasterDoc extends Component {
             <Col span={24} style={styles.codeBox}>
               <Rate value={5} allCode={5} fontSize={'1.6rem'} normalColor={'#EBEBEB'} activeColor={'#EFCB47'}/>
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Buttons, Toaster } = Components;
   <Rate value={0} allCode={5} fontSize={'1.6rem'} normalColor={'#EBEBEB'} activeColor={'#EFCB47'}/>
   <Rate value={2} allCode={5} fontSize={'1.6rem'} normalColor={'#EBEBEB'} activeColor={'#EFCB47'}/>

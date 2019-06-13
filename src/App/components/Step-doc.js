@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -89,7 +89,7 @@ class StepDoc extends Component {
               {title: '信息确认'},
               {title: '开户'}]} />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { LabelGroup } = Components;
 const labelMap = [{ text: '123', icon: 'android-happy', type: 'gray' },
   { text: '123', icon: 'android-happy', type: 'primary' },

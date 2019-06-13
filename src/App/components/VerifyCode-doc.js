@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -82,7 +82,7 @@ class LabelDoc extends Component {
                 </Col>
               </Row>
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { VerifyCode } = Components;
   <VerifyCode />
   <VerifyCode style={{width: '180px', height: '90px'}} />
@@ -104,7 +104,7 @@ const { VerifyCode } = Components;
                 </Col>
               </Row>
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { VerifyCode } = Components;
 <VerifyCode style={{width: '100px', height: '60px'}} ref={(r) => {
   this.$$VerifyCode = r;

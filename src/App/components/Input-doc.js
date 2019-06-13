@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React , { Component }from 'react';
-import {Components, Parts, utils} from '../../WAP';
+import {Components, Parts, utils} from '../../neo';
 import styles from '../common/style';
 import Code from '../common/Code';
 import '../../Style/comment.scss'
@@ -73,7 +73,7 @@ class InputDoc extends Component {
               maxLength={100}
               />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Input } = Components;
 <Input
 ref={(input) => { dom.input = input; }}
@@ -185,7 +185,7 @@ maxLength={10}
               typeStyle="half"
               />
             </Col>
-            <Code codes={`import { Components } from '../../WAP';
+            <Code codes={`import { Components } from '../../neo';
 const { Textarea } = Components;
 <Textarea
   placeholder="我是placeholder"
