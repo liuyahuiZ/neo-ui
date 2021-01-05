@@ -27,7 +27,7 @@
     "@babel/register": "^7.0.0-beta.46",
     "acorn": "^6.1.1",
     "acorn-dynamic-import": "^4.0.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-loader": "^8.0.0-beta.2",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
