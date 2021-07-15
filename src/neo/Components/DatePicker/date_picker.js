@@ -14,6 +14,7 @@ export default class DatePicker extends Component {
 		let _startDate = query.start_date;
 		let _endDate = query.end_date;
 		let _days = getDays(_startDate, _endDate, _endDate, query.date_type !== '3');
+		console.log('query.date_type', query.date_type);
 		let _type = parseInt(query.date_type);
 		let _hideType =(query.hide_type)
 		let _canClick = _type === 2 || _type === 3;
@@ -27,7 +28,8 @@ export default class DatePicker extends Component {
 		let _months = [];
 		let _year = moment(_endDate).year();
 		let _selectedMonth = moment(_endDate).format('YYYY-MM');
-		
+		const dateNum = - 20*365
+
 		if (4 === _type) {
 			_months = getMonths(_year, _selectedMonth);
 		}
@@ -36,6 +38,11 @@ export default class DatePicker extends Component {
 			startDate: nowDate,
 			endDate: nowDate
 		};
+
+		this.canSelectDate = {
+			startDate: moment().subtract(dateNum, 'days').format('YYYY-MM-DD'),
+			endDate: moment().subtract(dateNum, 'days').format('YYYY-MM-DD')
+		}
 
 		this.datePicker = {
 			selected: false,
@@ -327,8 +334,8 @@ export default class DatePicker extends Component {
 		let _endDate = date;
 		let _mmntDate = date;
 
-		if (moment(date).isAfter(this.nowDate.startDate)) {
-			// this.showToast('时间选择出错，请重新选择');
+		if (moment(date).isAfter(this.canSelectDate.startDate)) {
+			console.log('时间选择出错，请重新选择');
 
 			return ;
 		}
@@ -347,7 +354,7 @@ export default class DatePicker extends Component {
 			// 	return ;
 			// }
 
-			if (!moment(_endDate).isAfter(this.nowDate.startDate)) {
+			if (!moment(_endDate).isAfter(this.canSelectDate.startDate)) {
 				_days = getDays(_startDate, _endDate, _endDate, false);
 			} else {
 				// this.showToast('时间选择出错，请重新选择');
@@ -836,7 +843,7 @@ class Days extends Component {
 				{
 					this.props.days.map((val, index) => {
 						return (
-							<li className={(val.isCurrMonth && !val.disabled) || (val.isDuration && !val.disabled) ? 'active' : ''} key={`day-${index}`} onClick={this.handleSelectDay.bind(this, val.date)}>
+							<li className={(val.isCurrMonth && !val.disabled) || (val.isDuration && !val.disabled) ? 'active' : ''} key={`day-${index}`}  key={`day-${index}`} onClick={this.handleSelectDay.bind(this, val.date)}>
 								<span className={["content-bg", val.isDuration ? ' active' : '', val.isPoint === 1 ? ' active-l' : '', val.isPoint === 3 ? ' active-r' : ''].join('')}>
 									<span className={["content", val.isPoint !== 0 && this.props.showPoint ? ' active' : '', val.isToday ? ' today' : ''].join('')}>{val.text}</span>
 								</span>

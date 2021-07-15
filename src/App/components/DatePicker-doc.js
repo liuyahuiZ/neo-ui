@@ -32,6 +32,7 @@ class DatePickerDoc extends Component {
       this.state = {
           confirmDirty: false,
           datePicker: {
+            allow_today: true,
             startDate,
             endDate,
             dateType: 2,

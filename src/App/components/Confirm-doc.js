@@ -151,7 +151,7 @@ class ConfirmDoc extends Component {
                             Modal.alert({ title: 'warning', content: 'this is a warning', 
                             btn: {
                               text: '复审不通过',
-                              type: 'link',
+                              type: 'primary',
                               style: { 'height': '2rem', 'margin': '0', 'borderRadius': '0'}
                             }, 
                             type: 'middle' }, () => { console.log('alert'); }); }}
